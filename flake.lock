@@ -1,0 +1,44 @@
+{
+  "nodes": {
+    "awesome-prometheus-alerts": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1689437125,
+        "narHash": "sha256-DaX690hv09axyzahuhmgp3cIX7YPh72SFnVHp2wZpfQ=",
+        "owner": "samber",
+        "repo": "awesome-prometheus-alerts",
+        "rev": "0eb66a5d2cbdff0ab7c7199e197bd7d291e1db19",
+        "type": "github"
+      },
+      "original": {
+        "owner": "samber",
+        "repo": "awesome-prometheus-alerts",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1689449371,
+        "narHash": "sha256-sK3Oi8uEFrFPL83wKPV6w0+96NrmwqIpw9YFffMifVg=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "29bcead8405cfe4c00085843eb372cc43837bb9d",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "nixpkgs-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "awesome-prometheus-alerts": "awesome-prometheus-alerts",
+        "nixpkgs": "nixpkgs"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
