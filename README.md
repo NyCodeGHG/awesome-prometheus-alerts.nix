@@ -1,4 +1,4 @@
-# awesome-prometheus-rules.nix
+# awesome-prometheus-alerts.nix
 
 Nix packages and NixOS module for [awesome-prometheus-alerts](https://github.com/samber/awesome-prometheus-alerts).
 
@@ -12,17 +12,17 @@ Add this flake as an input:
 {
   inputs = {
     # ...
-    awesome-prometheus-rules = {
-      url = "github:NyCodeGHG/awesome-prometheus-rules.nix";
+    awesome-prometheus-alerts = {
+      url = "github:NyCodeGHG/awesome-prometheus-alerts.nix";
       # This is optional, but recommended. It reduces the amount of dependencies and clutter in your flake.lock
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
-  outputs = { nixpkgs, awesome-prometheus-rules, ... }: {
+  outputs = { nixpkgs, awesome-prometheus-alerts, ... }: {
     nixosConfigurations.example = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       modules = [
-        awesome-prometheus-rules.nixosModules.default
+        awesome-prometheus-alerts.nixosModules.default
         {
           services.prometheus = {
             enable = true;

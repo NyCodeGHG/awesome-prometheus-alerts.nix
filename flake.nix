@@ -1,5 +1,5 @@
 {
-  description = "awesome-prometheus-rules";
+  description = "awesome-prometheus-alerts";
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
     awesome-prometheus-alerts = {
