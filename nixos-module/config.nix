@@ -6,7 +6,7 @@
 }:
 # please don't look at this
 let
-  inherit (import ./lib.nix {inherit pkgs lib;}) makeName mapServices getPackageFiles packages;
+  inherit (import ./lib.nix {inherit pkgs lib;}) makeName mapServices getPackageFiles;
   files = lib.flatten (lib.attrValues (mapServices ({
     name,
     package,

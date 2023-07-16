@@ -1,7 +1,6 @@
 # awesome-prometheus-rules.nix
 
-[https://github.com/samber/awesome-prometheus-alerts](awesome-prometheus-alerts) packages using [nix](https://nixos.org).
-
+Nix packages and NixOS module for [awesome-prometheus-alerts](https://github.com/samber/awesome-prometheus-alerts).
 
 ## Usage
 
@@ -23,6 +22,7 @@ Add this flake as an input:
     nixosConfigurations.example = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       modules = [
+        (awesome-prometheus-rules.nixosModules.default)
         {
           services.prometheus = {
             enable = true;
@@ -34,3 +34,11 @@ Add this flake as an input:
   }
 }
 ```
+
+### Without Flakes
+
+This is currently not supported. Feel free to make a PR :)
+
+## License
+
+Licensed under the MIT license ([LICENSE](LICENSE) or http://opensource.org/licenses/MIT)

@@ -18,5 +18,6 @@
         guest.port = config.services.prometheus.port;
       }
     ];
+    networking.firewall.allowedTCPPorts = [ config.services.prometheus.port ];
   };
 }
