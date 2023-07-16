@@ -26,7 +26,9 @@ Add this flake as an input:
         {
           services.prometheus = {
             enable = true;
-            prometheus-self-monitoring.embedded-exporter.enable = true;
+            awesome-prometheus-alerts = {
+              prometheus-self-monitoring.embedded-exporter.enable = true;
+            };
           };
         }
       ];
