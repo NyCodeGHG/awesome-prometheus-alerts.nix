@@ -36,15 +36,15 @@
       imports = [
         ./nixos-module/options.nix
         ./nixos-module/config.nix
+        {
+          nixpkgs.overlays = [self.overlays.default];
+        }
       ];
     };
     nixosConfigurations = forAllSystems (pkgs: {
       example = nixpkgs.lib.nixosSystem {
         system = pkgs.system;
         modules = [
-          {
-            nixpkgs.overlays = [self.overlays.default];
-          }
           self.nixosModules.default
           ./example.nix
         ];
