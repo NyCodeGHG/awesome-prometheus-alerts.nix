@@ -22,7 +22,7 @@ Add this flake as an input:
     nixosConfigurations.example = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       modules = [
-        (awesome-prometheus-rules.nixosModules.default)
+        awesome-prometheus-rules.nixosModules.default
         {
           services.prometheus = {
             enable = true;
