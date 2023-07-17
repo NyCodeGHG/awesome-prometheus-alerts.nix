@@ -50,5 +50,10 @@
         ];
       };
     });
+    devShells = forAllSystems (pkgs: {
+      default = pkgs.mkShell {
+        buildInputs = with pkgs; [ mdbook ];
+      };
+    });
   };
 }

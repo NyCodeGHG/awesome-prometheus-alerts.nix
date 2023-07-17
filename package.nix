@@ -9,7 +9,7 @@
     awesome-prometheus-alerts,
   }:
     stdenvNoCC.mkDerivation {
-      name = "${name}-alerts";
+      inherit name;
       src = "${awesome-prometheus-alerts}/dist/rules";
 
       buildPhase = ''

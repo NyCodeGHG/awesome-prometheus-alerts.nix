@@ -17,7 +17,7 @@
             type = types.bool;
             default = false;
             description = ''
-              Enables the ${fancyName} Prometheus rules.
+              Enables the ${package.name} ${fancyName} Prometheus rules.
             '';
           };
         })
