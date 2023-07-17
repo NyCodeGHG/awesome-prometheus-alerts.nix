@@ -28,7 +28,7 @@
       import ./package.nix {
         inherit awesome-prometheus-alerts pkgs;
       };
-    docs = pkgs: {docs = pkgs.callPackage ./docs.nix {inherit inputs;};};
+    docs = pkgs: {docs = pkgs.callPackage ./docs {inherit inputs;};};
   in {
     packages = forAllSystems (pkgs: (packages pkgs) // (docs pkgs));
     overlays.default = final: prev: {awesome-prometheus-alerts = packages nixpkgs.legacyPackages.${prev.system};};

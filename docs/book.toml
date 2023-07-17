@@ -1,0 +1,14 @@
+[book]
+authors = ["Marie Ramlow"]
+language = "en"
+multilingual = false
+src = "src"
+title = "awesome-prometheus-alerts.nix"
+
+[output.html]
+git-repository-url = "https://github.com/NyCodeGHG/awesome-prometheus-rules.nix/tree/main/docs"
+edit-url-template = "https://github.com/NyCodeGHG/awesome-prometheus-rules.nix/edit/main/docs/{path}"
+
+[preprocessor.toc]
+command = "mdbook-toc"
+renderer = ["html"]
