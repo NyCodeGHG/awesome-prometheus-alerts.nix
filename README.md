@@ -5,7 +5,7 @@ This project allows you to use awesome-prometheus-alerts in a NixOS idiomatic wa
 
 ## Documentation
 
-[View the documentation](https://nycodeghg.github.io/awesome-prometheus-rules.nix/)
+[View the documentation](https://awesome-prometheus-alerts.nix.marie.cologne)
 
 ## License
 
